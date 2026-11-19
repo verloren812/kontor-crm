@@ -1,0 +1,18 @@
+# Environment and secrets
+.env
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+pytest-cache-files-*/
+
+# Local databases
+*.db
+*.db.old
+
+# Internal notes and local backups
+AUDIT.md
+_backup/

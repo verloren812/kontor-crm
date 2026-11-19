@@ -1,0 +1,19 @@
+# Versions are pinned on purpose: without pins a new machine installs the
+# latest releases and the build is no longer reproducible. Upgrade deliberately.
+#
+# Sensitive pair: passlib 1.7.4 does not work with bcrypt 5.x
+# (AttributeError: module 'bcrypt' has no attribute '__about__'), which would
+# break every login. Do not upgrade bcrypt without testing.
+
+fastapi==0.139.0
+uvicorn[standard]==0.51.0
+sqlalchemy==2.0.51
+alembic==1.18.5
+pydantic==2.13.4
+pydantic-settings==2.14.2
+email-validator==2.4.0
+PyJWT==2.13.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-multipart==0.0.32
+psycopg2-binary==2.9.12
